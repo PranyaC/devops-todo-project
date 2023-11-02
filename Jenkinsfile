@@ -20,7 +20,8 @@ pipeline {
   stage('Publish image to Docker Hub') {
           
             steps {
-
+                
+                bat 'docker login -u "pranyachandratre" -p "Pranya21*"'
                 bat 'docker push pranyachandratre/devopsproject'
           }
         }
